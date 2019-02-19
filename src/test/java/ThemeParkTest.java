@@ -68,7 +68,7 @@ public class ThemeParkTest {
 
     @Test
     public void attractionsAllowedForVisitor(){
-        assertEquals(3, themePark.allAllowed(visitor));
+        assertEquals(3, themePark.allAllowed(visitor).size());
     }
 
 

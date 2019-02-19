@@ -32,7 +32,7 @@ public class DodgemsTest {
 
     @Test
     public void hasVisitorPrice(){
-        assertEquals(2, dodgems.priceForVisitor(visitor), 0.01);
+        assertEquals(4.50, dodgems.priceForVisitor(visitor), 0.01);
     }
 
     @Test

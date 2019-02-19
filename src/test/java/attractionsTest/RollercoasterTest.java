@@ -29,12 +29,12 @@ public class RollercoasterTest {
 
     @Test
     public void hasDefaultPrice(){
-        assertEquals(1, rollercoaster.defaultPrice(), 0.01);
+        assertEquals(8.40, rollercoaster.defaultPrice(), 0.01);
     }
 
     @Test
     public void hasVisitorPrice(){
-        assertEquals(2, rollercoaster.priceForVisitor(visitor), 0.01);
+        assertEquals(8.40, rollercoaster.priceForVisitor(visitor), 0.01);
     }
 
     @Test

@@ -1,8 +1,9 @@
 package stalls;
 
 import interfaces.IReviewed;
+import interfaces.ITicketed;
 
-public abstract class Stall implements IReviewed {
+public abstract class Stall implements IReviewed, ITicketed {
 
     private String name;
     private String ownerName;

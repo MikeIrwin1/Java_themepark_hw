@@ -4,6 +4,7 @@ import interfaces.ISecurity;
 import stalls.Stall;
 import visitors.Visitor;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class ThemePark {
@@ -36,7 +37,7 @@ public class ThemePark {
         return reviewed;
     }
 
-    public int allAllowed(Visitor visitor) {
+    public ArrayList<IReviewed> allAllowed(Visitor visitor) {
         ArrayList<IReviewed> allowed = new ArrayList<>();
 
         for (Attraction attraction : attractions){
@@ -51,6 +52,6 @@ public class ThemePark {
 
         }
 
-        return allowed.size();
+        return allowed;
     }
 }
