@@ -6,19 +6,25 @@ import visitors.Visitor;
 
 public class Rollercoaster extends Attraction implements ITicketed, ISecurity {
 
+    private double defaultPrice;
+
     public Rollercoaster(String name) {
         super(name);
+        this.defaultPrice = 8.40;
     }
 
 
     @Override
     public double defaultPrice() {
-        return 1;
+        return defaultPrice;
     }
 
     @Override
     public double priceForVisitor(Visitor visitor) {
-        return 2;
+        if (visitor.getHeight() > 200){
+            return defaultPrice * 2;
+        }
+        return defaultPrice;
     }
 
     @Override

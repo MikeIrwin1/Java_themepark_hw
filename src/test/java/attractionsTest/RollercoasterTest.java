@@ -19,7 +19,7 @@ public class RollercoasterTest {
     public void before(){
         rollercoaster = new Rollercoaster("Rise and Fall of Syntax Man");
         visitor = new Visitor(25, 110, 100);
-        visitor2 = new Visitor(13, 180, 100);
+        visitor2 = new Visitor(13, 210, 100);
     }
 
     @Test
@@ -45,5 +45,10 @@ public class RollercoasterTest {
     @Test
     public void visitorIsAllowed(){
         assertEquals(true, rollercoaster.isAllowedTo(visitor2));
+    }
+
+    @Test
+    public void tallChargedDouble(){
+        assertEquals(16.80, rollercoaster.priceForVisitor(visitor2), 0.01);
     }
 }
