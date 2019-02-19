@@ -1,8 +1,8 @@
 public class Visitor {
 
     private int age;
-    private Double height;
-    private Double money;
+    private double height;
+    private double money;
 
     public Visitor(int age, double height, double money) {
         this.age = age;
@@ -14,11 +14,11 @@ public class Visitor {
         return age;
     }
 
-    public Double getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public Double getMoney() {
+    public double getMoney() {
         return money;
     }
 }
