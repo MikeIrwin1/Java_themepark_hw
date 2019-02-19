@@ -33,4 +33,9 @@ public class DodgemsTest {
         assertEquals(2, dodgems.priceForVisitor(visitor), 0.01);
     }
 
+    @Test
+    public void hasRating(){
+        assertEquals(0, dodgems.getRating());
+    }
+
 }
